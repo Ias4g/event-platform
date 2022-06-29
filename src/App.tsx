@@ -16,7 +16,7 @@ function App() {
 
   return (
     <h1 className="text-3xl">
-      Hello Iza
+      Hello Izael silva
     </h1>
   )
 }
