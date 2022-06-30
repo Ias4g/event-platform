@@ -16,7 +16,7 @@ export function Sidebar() {
                     title="Aula 1"
                     slug="Aula-1"
                     availableAt={new Date()}
-                    type="class"
+                    type="live"
                 />
             </div>
         </aside>
