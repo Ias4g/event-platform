@@ -11,7 +11,9 @@ export function Header() {
                 <Logo />
             </header>
 
-            <main>
+            <main
+                className="flex"
+            >
                 <Video />
                 <Sidebar />
             </main>
