@@ -1,3 +1,5 @@
+import { Lesson } from "./Lesson";
+
 export function Sidebar() {
     return (
         <aside
@@ -8,6 +10,15 @@ export function Sidebar() {
             >
                 Cronograma de aulas
             </span>
+
+            <div className="flex flex-col">
+                <Lesson />
+                <Lesson />
+                <Lesson />
+                <Lesson />
+                <Lesson />
+                <Lesson />
+            </div>
         </aside>
     )
 }
