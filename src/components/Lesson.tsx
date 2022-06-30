@@ -1,5 +1,12 @@
 import { CheckCircle } from 'phosphor-react'
 
+interface LessonProps {
+    title: string
+    slug: string
+    availabe: Date
+    type: "live" | 'class'
+}
+
 export function Lesson() {
     return (
         <a href="">
