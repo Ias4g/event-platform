@@ -1,7 +1,17 @@
+import { Header } from "./components/Header"
+import { Lesson } from "./components/Lesson"
+import { Sidebar } from "./components/Sidebar"
+import { Video } from "./components/Video"
+
 function App() {
 
   return (
-    <h1>Izael silva</h1>
+    <>
+      <Header />
+      <Sidebar />
+      <Video />
+      <Lesson />
+    </>
   )
 }
 
