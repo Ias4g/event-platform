@@ -42,10 +42,11 @@ export function Sidebar() {
                 {data?.lessons.map(lesson => {
                     return (
                         <Lesson
-                            title="Aula 1"
-                            slug="Aula-1"
-                            availableAt={new Date()}
-                            type="live"
+                            key={lesson.id}
+                            title={lesson.title}
+                            slug={lesson.slug}
+                            availableAt={new Date(lesson.availableAt)}
+                            type={lesson.lessonType}
                         />
                     )
                 })}
