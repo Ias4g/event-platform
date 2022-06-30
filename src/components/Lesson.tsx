@@ -1,5 +1,15 @@
 export function Lesson() {
     return (
-        <h1>Lesson</h1>
+        <a href="">
+            <span>Domingo • 20 de junho • 19h00</span>
+
+            <div>
+                <header>
+                    <span>Conteúdo liberado</span>
+                    <span>ao vivo</span>
+                </header>
+                <strong>Abertura do evento Ignite labs</strong>
+            </div>
+        </a>
     )
 }
