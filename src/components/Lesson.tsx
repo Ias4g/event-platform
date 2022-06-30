@@ -16,7 +16,9 @@ export function Lesson() {
                         ao vivo
                     </span>
                 </header>
-                <strong>Abertura do evento Ignite labs</strong>
+                <strong className="text-gray-200 mt-5 block">
+                    Abertura do evento Ignite labs
+                </strong>
             </div>
         </a>
     )
