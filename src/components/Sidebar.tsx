@@ -20,7 +20,7 @@ interface GetLessonsQueryResponse {
         slug: string
         availableAt: string
         lessonType: 'live' | 'class'
-    }
+    }[]
 }
 
 export function Sidebar() {
@@ -39,12 +39,16 @@ export function Sidebar() {
             </span>
 
             <div className="flex flex-col gap-8">
-                <Lesson
-                    title="Aula 1"
-                    slug="Aula-1"
-                    availableAt={new Date()}
-                    type="live"
-                />
+                {data?.lessons.map(lesson => {
+                    return (
+                        <Lesson
+                            title="Aula 1"
+                            slug="Aula-1"
+                            availableAt={new Date()}
+                            type="live"
+                        />
+                    )
+                })}
             </div>
         </aside>
     )
