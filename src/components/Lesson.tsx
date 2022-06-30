@@ -1,9 +1,11 @@
 export function Lesson() {
     return (
         <a href="">
-            <span>Domingo • 20 de junho • 19h00</span>
+            <span className="text-gray-300">
+                Domingo • 20 de junho • 19h00
+            </span>
 
-            <div>
+            <div className="rounded border border-gray-500 p-4 mt-4">
                 <header>
                     <span>Conteúdo liberado</span>
                     <span>ao vivo</span>
