@@ -1,4 +1,4 @@
-import { DiscordLogo } from "phosphor-react";
+import { DiscordLogo, Lightning } from "phosphor-react";
 
 export function Video() {
     return (
@@ -29,10 +29,10 @@ export function Video() {
                             Comunidade do Discord
                         </a>
                         <a href=""
-                            className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center"
+                            className="p-4 text-sm border border-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center"
                         >
-                            <DiscordLogo size={24} />
-                            Comunidade do Discord
+                            <Lightning size={24} />
+                            Acesse o desafio
                         </a>
                     </div>
                 </div>
