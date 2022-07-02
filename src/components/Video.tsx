@@ -17,9 +17,19 @@ export function Video() {
                         <h1 className="text-2xl font-bold">
                             Aula 01 - Abertura do Ignite Lab
                         </h1>
-                        <p className="mt-4 text-gray-200">
+                        <p className="mt-4 text-gray-200 leading-relaxed">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et voluptas officiis facilis quisquam obcaecati ipsa repellat aliquam similique facere animi tenetur fuga vero deserunt ducimus alias placeat, rem, reiciendis voluptatibus.
                         </p>
+                        <div className="flex items-center gap-4 mt-6">
+                            <img
+                                src="https://github.com/Ias4g.png"
+                                alt="Imagem do perfil do github"
+                            />
+                            <div>
+                                <strong>Izael Silva</strong>
+                                <span>CTO at iCorp</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="flex flex-col gap-4">
                         <a href=""
