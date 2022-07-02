@@ -27,8 +27,16 @@ export function Video() {
                                 alt="Imagem do perfil do github"
                             />
                             <div>
-                                <strong className="font-bold text-2xl block">Izael Silva</strong>
-                                <span>CTO at iCorp</span>
+                                <strong
+                                    className="font-bold text-2xl block"
+                                >
+                                    Izael Silva
+                                </strong>
+                                <span
+                                    className="text-gray-200 text-sm block"
+                                >
+                                    CTO at iCorp
+                                </span>
                             </div>
                         </div>
                     </div>
