@@ -22,11 +22,12 @@ export function Video() {
                         </p>
                         <div className="flex items-center gap-4 mt-6">
                             <img
+                                className="h-16 rounded-full border-2 border-blue-500"
                                 src="https://github.com/Ias4g.png"
                                 alt="Imagem do perfil do github"
                             />
                             <div>
-                                <strong>Izael Silva</strong>
+                                <strong className="font-bold text-2xl block">Izael Silva</strong>
                                 <span>CTO at iCorp</span>
                             </div>
                         </div>
