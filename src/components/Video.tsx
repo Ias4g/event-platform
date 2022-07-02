@@ -1,3 +1,4 @@
+import { Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
 
 export function Video() {
@@ -7,7 +8,9 @@ export function Video() {
                 <div
                     className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video"
                 >
-
+                    <Player>
+                        <Youtube />
+                    </Player>
                 </div>
             </div>
 
