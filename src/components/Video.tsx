@@ -20,7 +20,9 @@ export function Video() {
                         </p>
                     </div>
                     <div className="flex flex-col gap-4">
-                        
+                        <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center">
+                            Comunidade do Discord
+                        </a>
                     </div>
                 </div>
             </div>
