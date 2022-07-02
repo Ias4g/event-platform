@@ -26,7 +26,9 @@ export function Video() {
                                 src="https://github.com/Ias4g.png"
                                 alt="Imagem do perfil do github"
                             />
-                            <div>
+                            <div
+                                className="leading-relaxed"
+                            >
                                 <strong
                                     className="font-bold text-2xl block"
                                 >
