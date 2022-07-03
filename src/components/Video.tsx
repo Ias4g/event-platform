@@ -72,7 +72,7 @@ export function Video(props: VideoProps) {
                         <p className="mt-4 text-gray-200 leading-relaxed">
                             {data.lesson.description}
                         </p>
-                        <div className="flex items-center gap-4 mt-6">
+                        <div className="flex items-start gap-4 mt-6">
                             <img
                                 className="h-16 rounded-full border-2 border-blue-500"
                                 src={data.lesson.teacher.avatarURL}
