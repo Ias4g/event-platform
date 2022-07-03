@@ -22,17 +22,22 @@ export function Subscribe() {
                     </strong>
                     <form action="" className="flex flex-col gap-2 w-full">
                         <input
+                            className="bg-gray-900 rounded px-5 h-14"
                             id="name"
                             type="text"
                             name="name"
                             placeholder="Seu nome completo"
                         />
                         <input
+                            className="bg-gray-900 rounded px-5 h-14"
                             id="email"
                             type="email"
                             name="email"
                             placeholder="Digite seu email"
                         />
+                        <button className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors">
+                            Garantir minha vaga
+                        </button>
                     </form>
                 </div>
             </div>
