@@ -44,7 +44,7 @@ export function Video(props: VideoProps) {
 
     if (!data) {
         return (
-            <div className="flex-1">
+            <div className="flex flex-1 items-center justify-center">
                 <p>Please Wait...</p>
             </div>
         )
