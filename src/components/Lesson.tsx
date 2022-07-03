@@ -18,7 +18,7 @@ export function Lesson(props: LessonProps) {
 
     return (
         <Link
-            to=""
+            to={`/event/lesson/${props.slug}`}
             className='group'
         >
             <span className="text-gray-300 capitalize">
@@ -58,6 +58,6 @@ export function Lesson(props: LessonProps) {
                     {props.title}
                 </strong>
             </div>
-        </a>
+        </Link>
     )
 }
