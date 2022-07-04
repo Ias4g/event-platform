@@ -14,10 +14,17 @@ export function Subscribe() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
 
-    const [createSubscriber, { data }] = useMutation(CREATE_SUBSCRIBER_MUTATION)
+    const [createSubscriber] = useMutation(CREATE_SUBSCRIBER_MUTATION)
 
     function handleSubscribe(event: FormEvent) {
         event.preventDefault()
+
+        createSubscriber({
+            variables: {
+                name,
+                email
+            }
+        })
     }
 
     return (
