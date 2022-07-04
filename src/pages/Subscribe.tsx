@@ -1,6 +1,25 @@
+import { gql, useMutation } from "@apollo/client";
+import { FormEvent, useState } from "react";
 import { Logo } from "../components/Logo";
 
+const CREATE_SUBSCRIBER_MUTATION = gql`
+    mutation CreateSubscriber ($name: String!, $email: String!) {
+        createSubscriber(data: { name: $name, email: $email }) {
+            id
+        }
+    }
+`
+
 export function Subscribe() {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+
+    const [createSubscriber, { data }] = useMutation(CREATE_SUBSCRIBER_MUTATION)
+
+    function handleSubscribe(event: FormEvent) {
+        event.preventDefault()
+    }
+
     return (
         <div
             className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center"
@@ -20,13 +39,14 @@ export function Subscribe() {
                     <strong className="text-2xl mb-6 block">
                         Inscreva-se gratuitamente
                     </strong>
-                    <form action="" className="flex flex-col gap-2 w-full">
+                    <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
                         <input
                             className="bg-gray-900 rounded px-5 h-14"
                             id="name"
                             type="text"
                             name="name"
                             placeholder="Seu nome completo"
+                            onChange={event => setName(event.target.value)}
                         />
                         <input
                             className="bg-gray-900 rounded px-5 h-14"
@@ -34,6 +54,7 @@ export function Subscribe() {
                             type="email"
                             name="email"
                             placeholder="Digite seu email"
+                            onChange={event => setEmail(event.target.value)}
                         />
                         <button className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors">
                             Garantir minha vaga
