@@ -33,7 +33,7 @@ export function Lesson(props: LessonProps) {
                 className={
                     classNames('rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500', {
                         'bg-green-500': isActiveLesson,
-                        
+                        // 'after:content-["o"] relative left-0 w-2 h-2': isActiveLesson,
                     })
                 }
             >
