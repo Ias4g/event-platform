@@ -2,6 +2,7 @@ import { format, isPast } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 import { CheckCircle, Lock } from 'phosphor-react'
 import { Link, useParams } from 'react-router-dom'
+import classNames from 'classnames'
 
 interface LessonProps {
     title: string
@@ -30,8 +31,9 @@ export function Lesson(props: LessonProps) {
 
             <div
                 className={
-                    `rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500 ${isActiveLesson ? 'bg-green-500' : ''
-                    }`
+                    classNames('rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500', {
+                        'bg-green-500': isActiveLesson
+                    })
                 }
             >
                 <header className="flex items-center justify-between">
