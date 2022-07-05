@@ -63,8 +63,9 @@ export function Lesson(props: LessonProps) {
                     </span>
                 </header>
                 <strong className={
-                    classNames('text-gray-200 mt-5 block', {
-                        'text-white': isActiveLesson
+                    classNames('mt-5 block', {
+                        'text-white': isActiveLesson,
+                        'text-gray-200': !isActiveLesson
                     })
                 }>
                     {props.title}
