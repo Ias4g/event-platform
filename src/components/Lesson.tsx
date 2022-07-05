@@ -23,7 +23,11 @@ export function Lesson(props: LessonProps) {
     return (
         <Link
             to={`/event/lesson/${props.slug}`}
-            className='group'
+            className={
+                classNames('group', {
+                    'cursor-not-allowed': !isLessonAvailable
+                })
+            }
         >
             <span className="text-gray-300 capitalize">
                 {availableDateFormatted}
