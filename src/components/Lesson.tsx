@@ -62,7 +62,11 @@ export function Lesson(props: LessonProps) {
                         {props.type === 'live' ? 'AO VIVO' : 'AULA PRÁTICA'}
                     </span>
                 </header>
-                <strong className="text-gray-200 mt-5 block">
+                <strong className={
+                    classNames('text-gray-200 mt-5 block', {
+                        'text-white': isActiveLesson
+                    })
+                }>
                     {props.title}
                 </strong>
             </div>
