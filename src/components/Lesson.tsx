@@ -22,10 +22,12 @@ export function Lesson(props: LessonProps) {
 
     return (
         <Link
+            
             to={`/event/lesson/${props.slug}`}
             className={
                 classNames('group', {
-                    'cursor-not-allowed': !isLessonAvailable
+                    // 'cursor-not-allowed': !isLessonAvailable
+                    // 'pointer-events-none cursor-pointer': !isLessonAvailable,
                 })
             }
         >
@@ -35,9 +37,11 @@ export function Lesson(props: LessonProps) {
 
             <div
                 className={
-                    classNames('relative rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500', {
+                    classNames('relative rounded border border-gray-500 p-4 mt-2', {
                         'bg-green-500': isActiveLesson,
-                        'after:absolute after:content-[""] after:w-6 after:h-6 after:-left-3 after:top-[50%] after:translate-y-[-50%] after:rotate-45 after:bg-green-500': isActiveLesson
+                        'after:absolute after:content-[""] after:w-6 after:h-6 after:-left-3 after:top-[50%] after:translate-y-[-50%] after:rotate-45 after:bg-green-500': isActiveLesson,
+                        'group-hover:border-green-500': isLessonAvailable,
+                        // 'cursor-not-allowed': !isLessonAvailable
                     })
                 }
             >
